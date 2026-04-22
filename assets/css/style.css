@@ -35,6 +35,8 @@ body {
 }
 
 .nav-links a {
+    display: flex;
+    gap: 20px;
     text-decoration: none;
     color: #666;
     margin-left: 20px;
@@ -57,7 +59,7 @@ body {
 .languages {
     margin-top: 20px;
     font-weight: bold;
-    color: #0070f3; /* Un blu tech professionale */
+    color: #0070f3; 
 }
 
 /* GRIGLIA PROGETTI */
