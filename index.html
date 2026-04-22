@@ -1,10 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
 <html>
    <head>
-    <title>Samplesite </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Portfolio Denise La Greca - Homepage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    Body of the site </br>
-    <a href="/Contatti">Contatti</a></br>
-    <a href="/CV">Il mio CV</a></br>
+    <nav class="navbar">
+        <div class="logo">DENISE.LG</div>
+        <div class="nav-links">
+            <a href="/Contatti">Contatti</a> </br>
+            <a href="/CV">Il mio CV</a> </br>
+        </div>
+    </nav>
+    <h1 class="title-big">Homepage</h1>
+   <section id="progetti" class="container">
+        <h2>Lavori Selezionati</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="img-placeholder">Progetto UX</div>
+                <h3>Redesign Sito Web per App Meditazione</h3>
+                <p>Analisi e prototipazione per il mercato DACH.</p>
+            </article>
+            <article class="project-card">
+                <div class="img-placeholder">Strategia Marketing</div>
+                <h3>GTM Asia Market</h3>
+                <p>Strategia di ingresso per brand tech in Cina.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="bio" class="container bio-section">
+        <h2>Oltre il Design</h2>
+        <p>Attualmente sto completando un doppio Master in UX Design e Marketing per unire dati e creatività.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Denise La Greca</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+ 
 </body>
 </html>
