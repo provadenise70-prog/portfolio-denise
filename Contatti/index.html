@@ -1,8 +1,46 @@
-<html>
-   <head>
-    <title>Samplesite - CV</title>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Denise La Greca</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap)" rel="stylesheet">
+    <script src="[https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js](https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js)"></script>
 </head>
 <body>
-    Body of the ks
+    <nav>
+        <a href="index.html" class="logo">Denise La Greca</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CV/index.html">Portfolio</a></li>
+            <li><a href="Contatti/index.html" class="active">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+        <section class="contact-section">
+            <h1>Iniziamo un Progetto</h1>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informazioni</h3>
+                    <p><i data-lucide="mail"></i> hello@deniselagreca.com</p>
+                    <p><i data-lucide="instagram"></i> @denise_creative</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Il tuo messaggio" rows="5"></textarea>
+                    <button type="submit" class="btn">Invia Messaggio</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Denise La Greca.</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
 </body>
 </html>
