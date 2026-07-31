@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-/* VARIABILI DESIGN */
-:root {
-    --lavender: #9b8ec4;
-    --soft-purple: #7c6daa;
-    --bg-light: #F5F3FF;
-    --white: #ffffff;
-    --text-main: #2D2D2D;
-    --text-muted: #6B7280;
-    --border: rgba(155, 138, 196, 0.15);
-    --transition: all 0.3s ease;
-=======
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap");
 *, *::before, *::after {
@@ -60,110 +48,31 @@ button {
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-soft: 0 4px 32px rgba(28, 28, 28, 0.08);
   --shadow-card: 0 8px 48px rgba(28, 28, 28, 0.12);
->>>>>>> 65491b2 (modifiche al sito)
 }
 
 /* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-<<<<<<< HEAD
-    font-family: 'Inter', sans-serif;
-    background-color: var(--bg-light);
-    color: var(--text-main);
-=======
   font-family: var(--font-body);
   background-color: var(--ivory);
   color: var(--charcoal);
   font-size: 16px;
   line-height: 1.65;
   overflow-x: hidden;
->>>>>>> 65491b2 (modifiche al sito)
 }
 h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--soft-purple); }
 
-<<<<<<< HEAD
-/* NAVIGAZIONE */
-nav {
-    padding: 1.5rem 8%;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--border);
-=======
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 300;
   line-height: 1.15;
   letter-spacing: -0.01em;
->>>>>>> 65491b2 (modifiche al sito)
 }
 .logo { font-size: 1.4rem; font-weight: 700; color: var(--lavender); text-decoration: none; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; }
 .nav-links a.active { color: var(--lavender); }
 
-<<<<<<< HEAD
-/* HERO SEZIONI */
-.hero {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(245, 243, 255, 0.7), rgba(245, 243, 255, 0.7)), url('[https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200](https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200)') center/cover;
-}
-.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
-
-/* BOTTONI */
-.btn {
-    padding: 0.8rem 2rem;
-    background: var(--lavender);
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-}
-.btn:hover { background: var(--soft-purple); transform: translateY(-2px); }
-
-/* GRIGLIE */
-section { padding: 4rem 8%; max-width: 1200px; margin: 0 auto; }
-.services-grid, .gallery-grid, .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    margin-top: 2rem;
-}
-
-/* CARDS */
-.portfolio-card, .service-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-.portfolio-card img { width: 100%; height: 250px; object-fit: cover; }
-.card-info { padding: 1.5rem; }
-
-/* FORM CONTATTI */
-.contact-form { display: flex; flex-direction: column; gap: 1rem; }
-.contact-form input, .contact-form textarea {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-family: inherit;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-top: 1px solid var(--border);
-}
-=======
 .section-label {
   font-family: var(--font-body);
   font-size: 0.7rem;
@@ -1331,4 +1240,3 @@ body.page-contact .nav-link[href*=Contatti]::after {
     font-size: 0.75rem;
   }
 }/*# sourceMappingURL=style.css.map */
->>>>>>> 65491b2 (modifiche al sito)
