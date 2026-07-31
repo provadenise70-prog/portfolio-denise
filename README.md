@@ -1,2 +1,5 @@
 # portfolio-denise
-provare a scrivere qui è sempre un casinoooo
+Portofolio con pagine:
+#HOMEPAGE
+#CV
+#CONTATTAMI
