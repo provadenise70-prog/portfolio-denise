@@ -35,13 +35,13 @@ button {
 :root {
   --cream: #f5e8f4;
   --ivory: #fdf4f8;
-  --charcoal: #450025;
   --warm-gray: #7a7079;
-  --gold: #ad82ca;
   --gold-light: #d47aa7;
   --terracotta: #c15ea0;
   --sage: #d49fcb;
   --border: #E2DAD0;
+  --soft-purple: #ad82ca;
+  --text-main: #450025;
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
   --nav-h: 72px;
@@ -55,7 +55,7 @@ button {
 body {
   font-family: var(--font-body);
   background-color: var(--ivory);
-  color: var(--charcoal);
+  color: var(--text-main);
   font-size: 16px;
   line-height: 1.65;
   overflow-x: hidden;
@@ -68,10 +68,10 @@ h1, h2, h3, h4 {
   line-height: 1.15;
   letter-spacing: -0.01em;
 }
-.logo { font-size: 1.4rem; font-weight: 700; color: var(--lavender); text-decoration: none; }
+.logo { font-size: 1.4rem; font-weight: 700; color: var(--soft-purple); text-decoration: none; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; }
-.nav-links a.active { color: var(--lavender); }
+.nav-links a.active { color: var(--soft-purple); }
 
 .section-label {
   font-family: var(--font-body);
@@ -89,7 +89,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   width: 32px;
   height: 1px;
-  background: var(--gold);
+  background: var(--soft-purple);
 }
 
 .btn-outline {
@@ -97,19 +97,19 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 10px;
   padding: 14px 36px;
-  border: 1px solid var(--charcoal);
+  border: 1px solid var(--text-main);
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--charcoal);
+  color: var(--text-main);
   background: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .btn-outline:hover {
-  background: var(--charcoal);
+  background: var(--text-main);
   color: var(--ivory);
   transform: translateY(-2px);
   box-shadow: var(--shadow-soft);
@@ -120,7 +120,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 10px;
   padding: 16px 40px;
-  background: var(--gold);
+  background: var(--soft-purple);
   color: var(--ivory);
   font-family: var(--font-body);
   font-size: 0.78rem;
@@ -132,7 +132,7 @@ h1, h2, h3, h4 {
   cursor: pointer;
 }
 .btn-gold:hover {
-  background: var(--charcoal);
+  background: var(--text-main);
   transform: translateY(-2px);
   box-shadow: var(--shadow-card);
 }
@@ -156,10 +156,10 @@ h1, h2, h3, h4 {
   font-size: 1.55rem;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: var(--charcoal);
+  color: var(--text-main);
 }
 .navbar-custom .navbar-brand span {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-style: italic;
 }
 .navbar-custom .nav-link {
@@ -181,11 +181,11 @@ h1, h2, h3, h4 {
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--gold);
+  background: var(--soft-purple);
   transition: width var(--transition);
 }
 .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
-  color: var(--charcoal) !important;
+  color: var(--text-main) !important;
 }
 .navbar-custom .nav-link:hover::after, .navbar-custom .nav-link.active::after {
   width: 100%;
@@ -214,7 +214,7 @@ h1, h2, h3, h4 {
   transition: color var(--transition);
 }
 .navbar-custom .nav-social a:hover {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 
 .hero {
@@ -260,7 +260,7 @@ h1, h2, h3, h4 {
 }
 .hero-content h1 em {
   font-style: italic;
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 .hero-content .hero-sub {
   font-family: var(--font-body);
@@ -309,7 +309,7 @@ h1, h2, h3, h4 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--soft-purple);
   color: var(--ivory);
   display: flex;
   align-items: center;
@@ -371,7 +371,7 @@ h1, h2, h3, h4 {
   line-height: 1.1;
 }
 .intro-section h2 em {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-style: italic;
 }
 .intro-section .intro-right p {
@@ -382,7 +382,7 @@ h1, h2, h3, h4 {
 }
 .intro-section .intro-right p:first-of-type {
   font-size: 1.2rem;
-  color: var(--charcoal);
+  color: var(--text-main);
   font-family: var(--font-display);
   font-weight: 300;
 }
@@ -401,7 +401,7 @@ h1, h2, h3, h4 {
   padding: 20px 24px;
   background: var(--ivory);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--soft-purple);
 }
 .intro-section .skill-item h4 {
   font-family: var(--font-display);
@@ -518,7 +518,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--soft-purple);
   margin-bottom: 8px;
 }
 .portfolio-card .card-title {
@@ -542,7 +542,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--charcoal);
+  color: var(--text-main);
   transition: gap var(--transition);
 }
 .portfolio-card .card-arrow::after {
@@ -550,7 +550,7 @@ h1, h2, h3, h4 {
   font-size: 1rem;
 }
 .portfolio-card:hover .card-title {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 .portfolio-card:hover .card-arrow {
   gap: 14px;
@@ -558,7 +558,7 @@ h1, h2, h3, h4 {
 
 .services-section {
   padding: 120px 0;
-  background: var(--charcoal);
+  background: var(--text-main);
   color: var(--ivory);
 }
 @media (max-width: 768px) {
@@ -570,7 +570,7 @@ h1, h2, h3, h4 {
   color: var(--gold-light);
 }
 .services-section .section-label::before {
-  background: var(--gold);
+  background: var(--soft-purple);
 }
 .services-section h2 {
   font-size: clamp(2.2rem, 4vw, 3.5rem);
@@ -590,7 +590,7 @@ h1, h2, h3, h4 {
 }
 .services-section .service-item {
   padding: 48px 36px;
-  background: var(--charcoal);
+  background: var(--text-main);
   border: 1px solid rgba(255, 255, 255, 0.06);
   transition: background var(--transition);
 }
@@ -598,7 +598,7 @@ h1, h2, h3, h4 {
   background: rgba(184, 147, 90, 0.12);
 }
 .services-section .service-item:hover .service-num {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 .services-section .service-item .service-num {
   font-family: var(--font-display);
@@ -634,11 +634,11 @@ h1, h2, h3, h4 {
   line-height: 1.4;
   max-width: 800px;
   margin: 0 auto 28px;
-  color: var(--charcoal);
+  color: var(--text-main);
 }
 .quote-section blockquote::before {
   content: "“";
-  color: var(--gold);
+  color: var(--soft-purple);
   font-size: 4rem;
   line-height: 0;
   vertical-align: -0.5em;
@@ -662,7 +662,7 @@ h1, h2, h3, h4 {
   margin: 16px 0 20px;
 }
 .cv-hero h1 em {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-style: italic;
 }
 .cv-hero p {
@@ -705,7 +705,7 @@ h1, h2, h3, h4 {
   gap: 10px;
 }
 .cv-layout .cv-sidebar .sidebar-block h3 i {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-size: 0.9rem;
 }
 .cv-layout .cv-sidebar .sidebar-block p, .cv-layout .cv-sidebar .sidebar-block a {
@@ -716,7 +716,7 @@ h1, h2, h3, h4 {
   margin-bottom: 4px;
 }
 .cv-layout .cv-sidebar .sidebar-block a:hover {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 .cv-layout .cv-sidebar .skill-bar-item {
   margin-bottom: 14px;
@@ -726,7 +726,7 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   font-size: 0.82rem;
   margin-bottom: 6px;
-  color: var(--charcoal);
+  color: var(--text-main);
 }
 .cv-layout .cv-sidebar .skill-bar-item .skill-track {
   height: 2px;
@@ -738,7 +738,7 @@ h1, h2, h3, h4 {
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--gold);
+  background: var(--soft-purple);
   transition: width 1s ease;
 }
 .cv-layout .cv-sidebar .lang-list li {
@@ -747,7 +747,7 @@ h1, h2, h3, h4 {
   font-size: 0.88rem;
   padding: 8px 0;
   border-bottom: 1px solid var(--border);
-  color: var(--charcoal);
+  color: var(--text-main);
 }
 .cv-layout .cv-sidebar .lang-list li span {
   color: var(--warm-gray);
@@ -765,7 +765,7 @@ h1, h2, h3, h4 {
   gap: 12px;
 }
 .cv-layout .cv-main .cv-section h2 i {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-size: 1rem;
 }
 .cv-layout .cv-main .timeline-item {
@@ -802,7 +802,7 @@ h1, h2, h3, h4 {
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: var(--gold);
+  color: var(--soft-purple);
   text-align: right;
   padding-right: 24px;
   padding-top: 4px;
@@ -820,9 +820,9 @@ h1, h2, h3, h4 {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--soft-purple);
   border: 2px solid var(--ivory);
-  box-shadow: 0 0 0 1px var(--gold);
+  box-shadow: 0 0 0 1px var(--soft-purple);
 }
 @media (max-width: 480px) {
   .cv-layout .cv-main .timeline-item .timeline-dot {
@@ -905,7 +905,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--soft-purple);
   background: rgba(184, 147, 90, 0.1);
   padding: 4px 10px;
   border-radius: 2px;
@@ -931,14 +931,14 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--charcoal);
-  border-bottom: 1px solid var(--charcoal);
+  color: var(--text-main);
+  border-bottom: 1px solid var(--text-main);
   padding-bottom: 4px;
   transition: var(--transition);
 }
 .projects-section .project-card .project-link:hover {
-  color: var(--gold);
-  border-color: var(--gold);
+  color: var(--soft-purple);
+  border-color: var(--soft-purple);
   gap: 14px;
 }
 
@@ -951,7 +951,7 @@ h1, h2, h3, h4 {
   margin: 16px 0 20px;
 }
 .contact-hero h1 em {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-style: italic;
 }
 .contact-hero p {
@@ -1006,7 +1006,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--gold);
+  color: var(--soft-purple);
   font-size: 0.95rem;
   margin-top: 2px;
 }
@@ -1021,12 +1021,12 @@ h1, h2, h3, h4 {
 }
 .contact-layout .contact-info .info-item div a, .contact-layout .contact-info .info-item div p {
   font-size: 0.95rem;
-  color: var(--charcoal);
+  color: var(--text-main);
   margin: 0;
   transition: color var(--transition);
 }
 .contact-layout .contact-info .info-item div a:hover, .contact-layout .contact-info .info-item div p:hover {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 .contact-layout .contact-info .social-links {
   display: flex;
@@ -1045,9 +1045,9 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 .contact-layout .contact-info .social-links a:hover {
-  background: var(--gold);
+  background: var(--soft-purple);
   color: var(--ivory);
-  border-color: var(--gold);
+  border-color: var(--soft-purple);
 }
 
 .contact-form-wrap .form-label {
@@ -1056,7 +1056,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--charcoal);
+  color: var(--text-main);
   margin-bottom: 8px;
 }
 .contact-form-wrap .form-control,
@@ -1066,7 +1066,7 @@ h1, h2, h3, h4 {
   padding: 14px 16px;
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--charcoal);
+  color: var(--text-main);
   background: var(--ivory);
   transition: border-color var(--transition), box-shadow var(--transition);
 }
@@ -1079,7 +1079,7 @@ h1, h2, h3, h4 {
 }
 .contact-form-wrap .form-control:focus,
 .contact-form-wrap .form-select:focus {
-  border-color: var(--gold);
+  border-color: var(--soft-purple);
   box-shadow: 0 0 0 3px rgba(184, 147, 90, 0.12);
   outline: none;
 }
@@ -1093,8 +1093,8 @@ h1, h2, h3, h4 {
   margin-top: 3px;
 }
 .contact-form-wrap .form-check .form-check-input:checked {
-  background-color: var(--gold);
-  border-color: var(--gold);
+  background-color: var(--soft-purple);
+  border-color: var(--soft-purple);
 }
 .contact-form-wrap .form-check .form-check-input:focus {
   box-shadow: 0 0 0 3px rgba(184, 147, 90, 0.15);
@@ -1125,12 +1125,12 @@ h1, h2, h3, h4 {
   background: rgba(138, 158, 140, 0.15);
   border-left: 3px solid var(--sage);
   font-size: 0.9rem;
-  color: var(--charcoal);
+  color: var(--text-main);
   margin-top: 20px;
 }
 
 .footer {
-  background: var(--charcoal);
+  background: var(--text-main);
   color: rgba(255, 255, 255, 0.55);
   padding: 72px 0 36px;
 }
@@ -1157,7 +1157,7 @@ h1, h2, h3, h4 {
   display: block;
 }
 .footer .footer-brand .brand-name span {
-  color: var(--gold);
+  color: var(--soft-purple);
   font-style: italic;
 }
 .footer .footer-brand p {
@@ -1183,7 +1183,7 @@ h1, h2, h3, h4 {
   transition: color var(--transition);
 }
 .footer ul li a:hover {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 .footer .footer-bottom {
   display: flex;
@@ -1208,12 +1208,12 @@ h1, h2, h3, h4 {
   transition: color var(--transition);
 }
 .footer .footer-bottom .footer-socials a:hover {
-  color: var(--gold);
+  color: var(--soft-purple);
 }
 
 body.page-cv .nav-link[href*=CV],
 body.page-contact .nav-link[href*=Contatti] {
-  color: var(--charcoal) !important;
+  color: var(--text-main) !important;
 }
 body.page-cv .nav-link[href*=CV]::after,
 body.page-contact .nav-link[href*=Contatti]::after {
