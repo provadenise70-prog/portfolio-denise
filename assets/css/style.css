@@ -204,10 +204,10 @@ h1, h2, h3, h4 {
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
-    top: 72px;  /* Height della navbar */
+    top: 72px; 
     left: 0;
     right: 0;
-    background-color: rgba(245, 232, 244, 0.95);  /* --cream con 95% opacità */
+    background-color: rgba(245, 232, 244, 0.95);  
     backdrop-filter: blur(8px);
     padding: 1.5rem 1rem;
     box-shadow: 0 8px 32px rgba(69, 0, 37, 0.15);
@@ -220,7 +220,7 @@ h1, h2, h3, h4 {
 
   .nav-link {
     padding: 0.75rem 0 !important;
-    color: var(--charcoal) !important;
+    color: var(--text-main) !important;
     border-bottom: 1px solid var(--border);
   }
 
@@ -229,7 +229,7 @@ h1, h2, h3, h4 {
   }
 
   .nav-link.active {
-    color: var(--gold) !important;
+    color: var(--soft-purple) !important;
     font-weight: 500;
   }
 }
